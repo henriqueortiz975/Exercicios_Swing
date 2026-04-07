@@ -1,14 +1,11 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package DAO;
 
-/**
- *
- * @author aluno.saolucas
- */
 public class GerenciadorNotas {
-    
+    public static String verificarSituacao(double media){
+        if(media > 7){
+            return "Aprovado";
+        }else{
+            return "Reprovado";
+        }
+    }
 }
