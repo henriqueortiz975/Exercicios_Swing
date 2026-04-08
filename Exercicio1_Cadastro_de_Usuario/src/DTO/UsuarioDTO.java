@@ -31,6 +31,8 @@ public class UsuarioDTO {
 
     @Override
     public String toString(){
-        return "Nome: " + nome + " / " + "Email: " + email + " / " + "Telefone: " + telefone;
+        return "Nome: " + getNome() + 
+           "\nEmail: " + getEmail() + 
+           "\nTelefone: " + getTelefone();
     }
 }

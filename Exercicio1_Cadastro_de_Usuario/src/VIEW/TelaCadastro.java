@@ -6,6 +6,7 @@
 package VIEW;
 
 import DTO.UsuarioDTO;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -140,7 +141,7 @@ public class TelaCadastro extends javax.swing.JFrame {
         objUsuarioDTO.setTelefone(telefone);
         
         String mostrar = objUsuarioDTO.toString();
-        System.out.println(mostrar);
+        JOptionPane.showMessageDialog(null, mostrar);
         
     }//GEN-LAST:event_SalvarActionPerformed
 
