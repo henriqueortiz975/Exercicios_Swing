@@ -1,14 +1,24 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package DAO;
 
-/**
- *
- * @author aluno.saolucas
- */
+import DTO.Produto;
+import java.util.ArrayList;
+
 public class GerenciadorProdutos {
+    ArrayList<Produto> Lista = new ArrayList<>();
     
+    public void adicionarProduto(Produto p){
+        Lista.add(p);
+    }
+    
+    public String listarProdutos() {
+        String resultado = "";
+
+        for (Produto p : Lista) {
+            resultado += "Nome: " + p.getNome() +
+                         "\nPreço: " + p.getPreco() +
+                         "\nQuantidade: " + p.getQuantidade() +
+                         "\n----------------------\n";
+        }
+        return resultado;
+    }
 }
